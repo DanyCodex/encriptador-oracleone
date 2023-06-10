@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1efb7e7807.js" crossorigin="anonymous"></script>
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="src/Logo.svg" alt="logo">
+        <input id="checkitem" type="checkbox" onclick="enableDarkMode()">
+    </header>
+
+    <main>
+        <section class="section-1">
+
+            <div class="container-text-box">
+                <textarea spellcheck="false" placeholder="Ingrese el texto aqui" class="text-box"></textarea>
+            </div>
+
+            <div class="alert">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>&nbsp Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="container-buttons">
+                <input class="btn-encrypt" onclick="btnEncrypt()" type="button" value="Encriptar">
+                
+                <input class="btn-decrypt" onclick="btnDecrypt()" type="button" value="Desencriptar">
+            </div>
+
+        </section>
+
+        <section class="section-2">
+
+            <div class="img-boy">
+                <img id="limpiar" src="src/Muñeco.svg" alt="boy">
+            </div>
+
+            <div class="paragraph">
+                <h3>Ningún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+
+
+            <div class="copy">
+                <input class="btn-copy" type="button" value="Copiar">
+            </div>
+
+            <div class="result">
+                <textarea readonly class="text-result" cols="30" rows="10"></textarea>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
